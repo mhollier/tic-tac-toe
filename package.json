@@ -1,0 +1,16 @@
+{
+  "name": "tic-tac-toe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mark Hollier",
+  "license": "MIT",
+  "dependencies": {
+    "command-line-args": "3.0.4",
+    "express": "4.14.0"
+  }
+}

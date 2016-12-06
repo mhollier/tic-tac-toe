@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/bootstrap.min.css" media="screen">
+
+  <style>
+    h1, h2, h3, h4 {
+      color: white;
+    }
+
+    body {
+      background-image: url(img/chalkboard.jpg);
+    }
+
+    .board {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      border: none;
+    }
+
+    .board-cell {
+      padding: 0;
+      border: 5px solid white;
+      border-collapse: collapse;
+      color: white;
+      background-color: transparent;
+      font-size: 48pt;
+      width: 100px;
+      height: 100px;
+      text-align: center
+    }
+
+    #gameover {
+      width: 320px;
+    }
+  </style>
+</head>
+<body>
+<div class="container-fluid">
+  <h2>Tic Tac Toe</h2>
+
+  <!-- Start Over button -->
+  <button id="clear" class="btn btn-default">Start Over
+    <i class="icon-repeat"></i>
+  </button>
+
+  <!-- The game board -->
+  <table class="board">
+    <tr>
+    <tr>
+      <td id="0" class="board-cell"></td>
+      <td id="1" class="board-cell"></td>
+      <td id="2" class="board-cell"></td>
+    </tr>
+    <tr>
+      <td id="3" class="board-cell"></td>
+      <td id="4" class="board-cell"></td>
+      <td id="5" class="board-cell"></td>
+    </tr>
+    <tr>
+      <td id="6" class="board-cell"></td>
+      <td id="7" class="board-cell"></td>
+      <td id="8" class="board-cell"></td>
+    </tr>
+  </table>
+
+  <!-- Display a message when there is a winner -->
+  <div id="gameover" class="pull-left" style="display: none">
+    <h4 class="alert alert-danger" id="gameovertext">
+      Game over. X is the winner!
+    </h4>
+  </div>
+
+  <!-- Bootstrap modal dialog for messages -->
+  <div class="modal fade" id="messageBox" role="dialog">
+    <div class="modal-dialog modal-xs">
+      <div class="modal-content">
+        <div class="modal-body">
+          <p id="messageBoxText">Message goes here.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Scripts -->
+<script src="/js/jquery-3.1.1.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/tictactoe.js"></script>
+</body>
+</html>
