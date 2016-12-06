@@ -4,7 +4,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js",
+    "start": "node tictactoe-server.js --port 5003",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Mark Hollier",
